@@ -510,7 +510,7 @@ class AutoLogin:
             time.sleep(3)
             page.wait_for_load_state('networkidle', timeout=30000)
     
-    def wait_redirect(self, page, wait=60):
+    def wait_redirect(self, page, wait=120):
         """等待重定向"""
         self.log("等待重定向...", "STEP")
         for i in range(wait):
